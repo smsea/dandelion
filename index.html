@@ -3,15 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web Page with Image</title>
+
+    <style>
+        /* 모바일에 맞게 이미지 크기 조정 */
+        img {
+            max-width: 100%; /* 이미지의 최대 너비는 부모 요소의 100% */
+            height: auto;    /* 이미지의 높이는 가로세로 비율을 유지하여 자동 조정 */
+            display: block;   /* 인라인 요소를 블록 요소로 변환하여 레이아웃에 영향을 줌 */
+            margin: 0 auto;   /* 가운데 정렬을 위한 마진 설정 (선택사항) */
+        }
+
+        /* 모바일 화면에 대한 스타일 */
+        @media screen and (max-width: 600px) {
+            img {
+                max-width: 100%; /* 모바일 화면에서 이미지가 꽉 차게 표시되도록 설정 */
+            }
+        }
+    </style>
+    <title>Maricle Detail</title>
 </head>
 
 <body>
-    <h1>사진 업로드 되나</h1>
-    <p>확인해볼까요</p>
-    <img src="C:\Users\suki0\OneDrive\바탕 화면\새 폴더\HD2_상세페이지2_파스텔1.jpg" alt="Description of your image">
-    <img src="C:\Users\suki0\OneDrive\바탕 화면\새 폴더\HD2_상세페이지2_파스텔2.jpg" alt="2본도 안보임?">
 
+    <img src="//ecimg.cafe24img.com/pg162b82901483004/damigreen/ss/dandelion/dandelion.jpg" alt="단델리안1">
+    <br><br><br>
+    <img src="//ecimg.cafe24img.com/pg162b82901483004/damigreen/ss/dandelion/211008_dandelion_02-1.jpg" alt="단델리안2"width="860px"height="auto">
+    <img src="//ecimg.cafe24img.com/pg162b82901483004/damigreen/ss/dandelion/211008_dandelion_02-2.jpg" alt="단델리안3"width="860px"height="auto">
+    <img src="//ecimg.cafe24img.com/pg162b82901483004/damigreen/ss/dandelion/211008_dandelion_02-3.jpg" alt="단델리안4"width="860px"height="auto">
+    <img src="//ecimg.cafe24img.com/pg162b82901483004/damigreen/ss/dandelion/211008_dandelion_02-4.jpg" alt="단델리안5"width="860px"height="auto">
 
 </body>
 </html>
